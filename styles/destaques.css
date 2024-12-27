@@ -1,0 +1,91 @@
+#destaques {
+  display: grid;
+  grid-template-rows: 20rem 10rem 10rem 10rem 10rem;
+  gap: 16px;
+
+  & div {
+    border-radius: 4px;
+
+    display: inherit;
+    align-items: flex-end;
+  }
+
+  & span {
+    padding-bottom: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9752275910364145) 0%, rgba(0, 0, 0, 0.017) 100%);
+  }
+
+  & span>* {
+    margin-inline: 16px;
+  }
+
+  /* & small {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+    background-color: var(--brand-color-dark);
+    border-radius: 4px;
+    padding-inline: 4px;
+    font-size: 0.625rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  } */
+
+  & p {
+    
+    display: -webkit-box;
+    /* Define um contêiner flexível */
+    -webkit-line-clamp: 3;
+    /* Limita o texto a 3 linhas */
+    -webkit-box-orient: vertical;
+    /* Define a orientação como vertical */
+    overflow: hidden;
+    /* Esconde o texto que ultrapassa as 3 linhas */
+    text-overflow: ellipsis;
+  }
+
+  div:nth-child(1) {
+    background-image: url(/assets/images/Image01.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: var(--h1);
+    
+    & small {
+      line-height: 18px;
+    }
+  }
+
+  div:nth-child(2) {
+    background-image: url(/assets/images/Image02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: var(--h3);
+  }
+
+  div:nth-child(3) {
+    background-image: url(/assets/images/Image03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: var(--h3);
+  }
+
+  div:nth-child(4) {
+    background-image: url(/assets/images/Image04.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: var(--h3);
+  }
+
+  div:nth-child(5) {
+    background-image: url(/assets/images/Image05.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: var(--h3);
+  }
+}

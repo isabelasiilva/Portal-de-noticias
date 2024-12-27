@@ -13,18 +13,19 @@
   --text-color-secondary: #CBD5E1;
 
   --font-family: "Archivo", sans-serif;
-  --h1: 800 24px/135% var(--font-family);
-  --h2: 800 16px/140% var(--font-family);
-  --h3: 800 14px/140% var(--font-family);
-  --text-span: 600 14px/145% var(--font-family);
-  --text: 400 16px/140% var(--font-family);
-  --text-sm: 400 14px/160% var(--font-family);
+  --h1: 800 1.5rem/135% var(--font-family);
+  --h2: 800 1rem/140% var(--font-family);
+  --h3: 800 .875rem/140% var(--font-family);
+  --text-span: 600 .875rem/145% var(--font-family);
+  --text: 400 1rem/140% var(--font-family);
+  --text-sm: 400 .875rem/160% var(--font-family);
 }
 
 body {
   font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+  margin: 16px 16px 40px;
 }
 
 a {
@@ -36,37 +37,47 @@ a:hover {
   color: var(--brand-color-light);
 }
 
-h1, h2, h3 {
-  font: inherit; 
+
+header {
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  & button {
+    background: none;
+    border: none;
+  }
+
+  & nav {
+    border-block: solid 1px var(--stroke-color);    
+  }
+
+
+  & nav ul {    
+    list-style: none;
+    white-space: nowrap;
+    margin-block: 14px;
+    overflow-x: auto;   
+
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+
+  }  
 }
 
-img {
-  max-width: 100%;
-}
+small {
+  display: inline-block;
+  margin-bottom: 8px;
 
-main {
-  margin-block: 40px;
-  row-gap: 80px;
-  column-gap: 32px;
-
-  grid-template-columns: 2fr 1.4fr; 
-
-  grid-template-areas: 
-  "featured featured"
-  "weekly weekly"
-  "ai aside";
-}
-
-.content-tag {
-  display: inline-block; 
-  background-color: var(--brand-color-dark);
-  padding: 4px 8px;
-  border-radius: 4px;
-
-  font: 500 10px/1.2 var(--font-family);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-
-  color: var(--text-color-primary);
-  box-shadow: 0px 4px 16px #02061740;
+  background-color: var(--brand-color-dark);
+  border-radius: 4px;
+  padding-inline: 4px;
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 1px;
 }

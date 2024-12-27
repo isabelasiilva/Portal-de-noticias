@@ -1,0 +1,43 @@
+aside {
+    border-top: solid 1px var(--stroke-color);
+    margin-block: 32px 56px;
+  
+    & header,
+    h3 {
+      font: var(--text-sm);
+      color: var(--text-color-secondary);
+    }
+  
+    & header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      margin-block: 12px 24px;
+    }
+
+    article {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 32px;
+
+        img {
+          width: 72px;
+        }
+    
+        h2 {
+          font: var(--h3);
+          display: -webkit-box;
+          /* Define um contêiner flexível */
+          -webkit-line-clamp: 2;
+          /* Limita o texto a 2 linhas */
+          -webkit-box-orient: vertical;
+          /* Define a orientação como vertical */
+          overflow: hidden;
+          /* Esconde o texto que ultrapassa as 3 linhas */
+          text-overflow: ellipsis;
+      
+          margin-top: 8px;
+        }
+    }
+}
