@@ -48,19 +48,19 @@
   }
 
   #noticias-wrapping1 article:nth-child(1) .noticias {
-    background-image: url(/assets/images/Image06.png);
+    background-image: url(../assets/images/Image06.png);
   }
 
   #noticias-wrapping1 article:nth-child(2) .noticias {
-    background-image: url(/assets/images/Image07.png);
+    background-image: url(../assets/images/Image07.png);
   }
 
   #noticias-wrapping1 article:nth-child(3) .noticias {
-    background-image: url(/assets/images/Image08.png);
+    background-image: url(../assets/images/Image08.png);
   }
 
   #noticias-wrapping1 article:nth-child(4) .noticias {
-    background-image: url(/assets/images/Image09.png);
+    background-image: url(../assets/images/Image09.png);
   }
 
   #noticias-wrapping1 .noticias {
