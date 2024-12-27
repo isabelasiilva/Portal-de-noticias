@@ -19,19 +19,6 @@
     margin-inline: 16px;
   }
 
-  /* & small {
-    display: inline-block;
-    margin-bottom: 8px;
-
-    text-transform: uppercase;
-    background-color: var(--brand-color-dark);
-    border-radius: 4px;
-    padding-inline: 4px;
-    font-size: 0.625rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-  } */
-
   & p {
     
     display: -webkit-box;
@@ -89,3 +76,4 @@
     font: var(--h3);
   }
 }
+

@@ -3,3 +3,4 @@
 @import url(maislidas.css);
 @import url(destaqueia.css);
 @import url(aside.css);
+@import url(cssfordesktop.css) (width >= 56em); /* só vai importar esse documento quando a tela for amior que 56em */

@@ -65,9 +65,14 @@ header {
     display: flex;
     justify-content: space-around;
     gap: 32px;
-
   }  
+
 }
+
+.just-width-lg {
+  display: none;
+}
+
 
 small {
   display: inline-block;
